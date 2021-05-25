@@ -1,0 +1,28 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        @include lg-media(max-width, 932, 207);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        @include md-media(max-width, 720, 223);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        @include sm-media(max-width, 540, 179);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px
+    }
+}
+
+@import 'blocks/media-promo';
+@import 'blocks/media-adventages';
+@import 'blocks/media-buttons';

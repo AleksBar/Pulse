@@ -1,0 +1,60 @@
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .advantages {
+        padding: 60px 0 65px 0;
+        &__item {
+            &__descr {
+                a {
+                    padding: 6px 0 6px 6px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    
+    .advantages {
+        padding-top: 55px;
+        padding-bottom: 0;
+        &__items {
+            margin-top: 45px;
+            flex-direction: column;
+        }
+        &__item {
+            max-width: 320px;
+            &__title {
+                margin-top: 20px;
+            }
+            &__descr {
+                margin-top: 10px;
+                a {
+                    padding: 6px 0 6px 6px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .advantages {
+        padding-top: 35px;
+        padding-bottom: 0;
+        &__items {
+            margin-top: 35px;
+            flex-direction: column;
+        }
+        &__item {
+            max-width: 320px;
+            &__title {
+                margin-top: 20px;
+            }
+            &__descr {
+                margin-top: 10px;
+                a {
+                    padding: 6px 0 6px 6px;
+                }
+            }
+        }
+    }
+}

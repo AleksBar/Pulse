@@ -1,0 +1,16 @@
+// adaptive size for media screens
+@mixin lg-media($attr, $min, $max) {
+    #{$attr}: calc(#{$min}px + #{$max} * ((100vw - 992px) / 207));
+}
+
+@mixin md-media($attr, $min, $max) {
+    #{$attr}: calc(#{$min}px + #{$max} * ((100vw - 768px) / 223));
+}
+
+@mixin sm-media($attr, $min, $max) {
+    #{$attr}: calc(#{$min}px + #{$max} * ((100vw - 576px) / 191));
+}
+
+@mixin esm-media($attr, $min, $max) {
+    #{$attr}: calc(#{$min}px + #{$max} * ((100vw - 320px) / 255));
+}

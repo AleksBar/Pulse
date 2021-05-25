@@ -1,0 +1,111 @@
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .promo {
+        min-height: 618px;
+        padding-bottom: 60px;
+        &__title {
+            @include md-media(font-size, 38, 3);
+        }
+        &__subtitle {
+            @include md-media(font-size, 21, 2);
+        }
+        &__icons {
+            margin-top: 40px;
+        }
+        &__link {
+            margin-top: 20px;
+            a {
+                padding: 6px 0 6px 6px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header {
+        &__logo {
+            width: 230px;
+        }
+        &__phone {
+            font-size: $fz16;
+        }
+        &__official {
+            display: none;
+        }
+    }
+
+    .promo {
+        min-height: 618px;
+        padding-bottom: 60px;
+        &__wrapper {
+            align-items: center;
+        }
+        &__icons {
+            margin-top: 40px;
+        }
+        &__link {
+            margin-top: 20px;
+            a {
+                padding: 6px 0 6px 6px;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .header {
+        &__logo {
+            @include esm-media(width, 200, 30);
+            margin: 10px;
+        }
+        &__phone {
+            font-size: $fz16;
+        }
+        &__official {
+            display: none;
+        }
+    }
+    
+    .promo {
+        min-height: 565px;
+        padding-bottom: 35px;
+        &__wrapper {
+            align-items: center;
+            @include esm-media(margin-top, 30, 30);
+        }
+        &__title {
+            @include esm-media(font-size, 36, 6);
+        }
+        &__subtitle {
+            text-align: end;
+        }
+        &__icons {
+            width: 100%;
+            margin-top: 20px;
+            justify-content: space-around
+        }
+        &__icon {
+            @include esm-media(width, 90, 20);
+            font-size: $fz12;
+        }
+        &__link {
+            margin-top: 20px;
+            a {
+                padding: 6px 0 6px 6px;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        &__official {
+            display: none;
+        }
+        &__phone {
+            margin-bottom: 10px;
+        }
+    }
+}
