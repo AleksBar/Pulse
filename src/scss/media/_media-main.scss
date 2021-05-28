@@ -1,6 +1,6 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .container {
-        @include lg-media(max-width, 932, 207);
+        @include lg-media(max-width, 932, 18);
     }
 }
 
@@ -25,4 +25,5 @@
 
 @import 'blocks/media-promo';
 @import 'blocks/media-adventages';
+@import 'blocks/media-consultation';
 @import 'blocks/media-buttons';

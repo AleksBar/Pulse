@@ -8,12 +8,21 @@
     font-size: $fz12;
     text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.button-main {
-    margin-top: 65px;
-    width: 300px;
-    height: 50px;
-    font-size: $fz16;
+    color: $white-color;
+    &_main {
+        margin-top: 65px;
+        width: 300px;
+        height: 50px;
+        font-size: $fz16;
+    }
+    &_submit {
+        width: 100%;
+        height: 55px;
+        font-size: $fz16;
+    }
+    &__card {
+        width: 135px;
+        height: 44px;
+        font-size: $fz14;
+    }
 }

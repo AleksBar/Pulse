@@ -1,8 +1,10 @@
 @media (min-width: 320px) and (max-width: 575px) {
-    .button-main {
-        @include esm-media(margin-top, 45, 20);
-        @include esm-media(width, 250, 50);
-        height: 50px;
-        @include esm-media(font-size, 14, 2);
-    }
+    .button {
+        &_main {
+            @include esm-media(margin-top, 45, 20);
+            @include esm-media(width, 250, 50);
+            height: 50px;
+            @include esm-media(font-size, 14, 2);
+        }
+    }    
 }
