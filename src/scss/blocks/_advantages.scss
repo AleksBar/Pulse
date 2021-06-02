@@ -43,5 +43,8 @@
                 color: #FF0000;
             }
         }
+        .animated-heart {
+            animation: heartBeat 1.5s ease infinite;
+        }
     }
 }

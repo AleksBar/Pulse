@@ -16,7 +16,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@media (max-width: 575px) {
     .container {
         max-width: 100%;
         padding: 0 10px
@@ -26,4 +26,6 @@
 @import 'blocks/media-promo';
 @import 'blocks/media-adventages';
 @import 'blocks/media-consultation';
-@import 'blocks/media-buttons';
+@import 'blocks/media-catalog';
+@import 'blocks/media-reviews';
+@import 'blocks/media-footer';

@@ -17,4 +17,19 @@
         line-height: 30px;
         color: #FFFFFF;
     }
+    &__form {
+        .error {
+            border: 1px solid red;
+            box-shadow: 0px 0px 2px red inset;
+        }
+        label.error {
+            color: #fff;
+            border: none;
+            box-shadow: none;
+            font-size: $fz14;
+            line-height: 15px;
+            transform: translateY(-12px);
+            padding-left: 7px;
+        }
+    }
 }

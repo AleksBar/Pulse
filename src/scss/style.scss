@@ -1,13 +1,50 @@
 @import 'base/variables';
 @import 'base/mixins';
+@import 'base/animations';
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    // margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.body-scroll-block {
+    overflow: hidden;
+}
+
 .container {
     max-width: 950px;
     margin: 0 auto;
+}
+
+a.scroll-up {
+    display: none;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 50px;
+    bottom: 50px;
+    img {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+    .bg {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        background: #fff;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
 }
 
 @import 'blocks/forms';
@@ -17,5 +54,8 @@
 @import 'blocks/consultation';
 @import 'blocks/slider';
 @import 'blocks/catalog';
+@import 'blocks/reviews';
+@import 'blocks/footer';
+@import 'blocks/modal';
 @import 'blocks/buttons';
 @import 'media/media-main';

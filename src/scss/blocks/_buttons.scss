@@ -9,6 +9,10 @@
     text-align: center;
     text-transform: uppercase;
     color: $white-color;
+    transition: 0.3s all;
+    &:hover {
+        box-shadow: 0px 0px 20px #c70101;
+    }
     &_main {
         margin-top: 65px;
         width: 300px;
@@ -24,5 +28,26 @@
         width: 135px;
         height: 44px;
         font-size: $fz14;
+    }
+}
+
+// Media    
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .button {
+        &_main {
+            @include esm-media(margin-top, 45, 20);
+            @include esm-media(width, 250, 50);
+            height: 50px;
+            @include esm-media(font-size, 14, 2);
+        }
+    }    
+}
+
+@media (max-width: 991px) {
+    .button {
+        &:hover {
+            box-shadow: none;
+        }
     }
 }

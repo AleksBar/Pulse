@@ -21,8 +21,16 @@
             top: 50%;
             transform: translateY(-50%);
             img {
+                transition: height 0.3s, width 0.3s;
                 width: 30px;
                 height: 50px;
+            }
+            &:hover {
+                img {
+                    width: 33px;
+                    height: 53px;
+                }
+                
             }
         }
         .prev {
@@ -38,6 +46,23 @@
 
 
 // Media
+
+@media (max-width: 991px) {
+    .slider {
+        &__wrapper {
+            button {
+                &:hover {
+                    img {
+                        width: 30px;
+                        height: 50px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .slider {
         .tns {
@@ -62,7 +87,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 575px) {
+@media (max-width: 575px) {
     .slider {
         .tns {
             &-item {

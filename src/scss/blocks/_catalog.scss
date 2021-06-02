@@ -47,6 +47,9 @@
         flex-wrap: wrap;
         &_active {
             display: flex;
+            &_adaptive-list {
+                justify-content: start;
+            }
         }
     }
     &__card {
@@ -56,6 +59,9 @@
         padding: 15px;
         margin-bottom: 20px;
         overflow: hidden;
+        &_adaptive-card {
+            @include lg-media(margin-right, 11.5, 8.5);
+        }
         &__wrapper {
             width: calc(200% + 34px);
             display: flex;
