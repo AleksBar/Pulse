@@ -88,6 +88,8 @@
                 }
                 ul {
                     position: relative;
+                    max-height: 290px;
+                    overflow-y: auto;
                     padding: 0 17px;
                     padding-right: 17px;
                     li {

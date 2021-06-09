@@ -1,3 +1,9 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+@import 'libs/tiny-slider';
+@import 'libs/social-icons';
+@import 'libs/animate';
+
 @import 'base/variables';
 @import 'base/mixins';
 @import 'base/animations';
@@ -29,6 +35,8 @@ a.scroll-up {
     height: 40px;
     right: 50px;
     bottom: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
     img {
         position: absolute;
         width: 100%;
